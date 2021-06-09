@@ -2899,3 +2899,18 @@ export function updateViewedNotifications(notificationIdViewedStatusMap) {
     notificationIdViewedStatusMap,
   );
 }
+
+export function resetBlockList() {
+  return (dispatch) => {
+    return new Promise((resolve, reject) => {
+      background.resetBlockList((err) => {
+        if (err) {
+          dispatch(displayWarning(err.message));
+          reject(err);
+          return;
+        }
+        resolve();
+      });
+    });
+  };
+}
