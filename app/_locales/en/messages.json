@@ -653,6 +653,9 @@
   "ensNotFoundOnCurrentNetwork": {
     "message": "ENS name not found on the current network. Try switching to Ethereum Mainnet."
   },
+  "ensNotSupportedOnNetwork": {
+    "message": "Network does not support ENS"
+  },
   "ensRegistrationError": {
     "message": "Error in ENS name registration"
   },
@@ -1450,9 +1453,6 @@
   },
   "recents": {
     "message": "Recents"
-  },
-  "recipientAddress": {
-    "message": "Recipient Address"
   },
   "recipientAddressPlaceholder": {
     "message": "Search, public address (0x), or ENS"
